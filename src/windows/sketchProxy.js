@@ -4,16 +4,23 @@
 
   appendCanvasHtmlJs();
 
-  var html = '<link rel="stylesheet" href="//Microsoft.WinJS.2.0/css/ui-dark.css" /><link rel="stylesheet" href="/www/cordova-plugin-sketch/css/program.css" /><link rel="stylesheet" href="/www/cordova-plugin-sketch/css/cordova-plugin-sketch.css" />';
+  var html = '<link rel="stylesheet" href="/www/cordova-plugin-sketch/css/ui-dark.css" /><link rel="stylesheet" href="/www/cordova-plugin-sketch/css/program.css" /><link rel="stylesheet" href="/www/cordova-plugin-sketch/css/cordova-plugin-sketch.css" />';
 
   var popupHtml = '<div id="cordova-plugin-sketch-popup" class="cordova-plugin-sketch-nativePopUp cordova-plugin-sketch-layout-withOrientation"><div id="cordova-plugin-sketch-sketchDiv" class="cordova-plugin-sketch-nativePopUp__content"></div></div>';
 
   function appendVeapicoreJs(){
       var head = document.getElementsByTagName('head').item(0);
+
+      var script1;
+      script1 = document.createElement('script');
+      script1.setAttribute('type', 'text/javascript');
+      script1.setAttribute('src', '/www/cordova-plugin-sketch/base.js');
+      head.appendChild(script1);
+
       var script;
       script = document.createElement('script');
       script.setAttribute('type', 'text/javascript');
-      script.setAttribute('src', '//Microsoft.WinJS.2.0/js/ui.js');
+      script.setAttribute('src', '/www/cordova-plugin-sketch/ui.js');
       head.appendChild(script);
   }
 
