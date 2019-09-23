@@ -8,20 +8,15 @@
         typeof global !== 'undefined' ? global :
         {};
     (function (factory) {
-        if (typeof define === 'function' && define.amd) {
-            // amd
-            define([], factory);
+        globalObject.msWriteProfilerMark && msWriteProfilerMark('WinJS.4.4 4.4.5.winjs.2019.9.16 base.js,StartTM');
+        if (typeof exports === 'object' && typeof exports.nodeName !== 'string') {
+            // CommonJS
+            factory();
         } else {
-            globalObject.msWriteProfilerMark && msWriteProfilerMark('WinJS.4.4 4.4.5.winjs.2019.9.16 base.js,StartTM');
-            if (typeof exports === 'object' && typeof exports.nodeName !== 'string') {
-                // CommonJS
-                factory();
-            } else {
-                // No module system
-                factory(globalObject.WinJS);
-            }
-            globalObject.msWriteProfilerMark && msWriteProfilerMark('WinJS.4.4 4.4.5.winjs.2019.9.16 base.js,StopTM');
+            // No module system
+            factory(globalObject.WinJS);
         }
+        globalObject.msWriteProfilerMark && msWriteProfilerMark('WinJS.4.4 4.4.5.winjs.2019.9.16 base.js,StopTM');
     }(function (WinJS) {
 
 // Copyright (c) Microsoft Corporation.  All Rights Reserved. Licensed under the MIT License. See License.txt in the project root for license information.

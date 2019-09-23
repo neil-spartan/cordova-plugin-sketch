@@ -8,20 +8,15 @@
         typeof global !== 'undefined' ? global :
         {};
     (function (factory) {
-        if (typeof define === 'function' && define.amd) {
-            // amd
-            define(["./base"], factory);
+        globalObject.msWriteProfilerMark && msWriteProfilerMark('WinJS.4.4 4.4.5.winjs.2019.9.16 ui.js,StartTM');
+        if (typeof exports === 'object' && typeof exports.nodeName !== 'string') {
+            // CommonJS
+            factory(require("./base"));
         } else {
-            globalObject.msWriteProfilerMark && msWriteProfilerMark('WinJS.4.4 4.4.5.winjs.2019.9.16 ui.js,StartTM');
-            if (typeof exports === 'object' && typeof exports.nodeName !== 'string') {
-                // CommonJS
-                factory(require("./base"));
-            } else {
-                // No module system
-                factory(globalObject.WinJS);
-            }
-            globalObject.msWriteProfilerMark && msWriteProfilerMark('WinJS.4.4 4.4.5.winjs.2019.9.16 ui.js,StopTM');
+            // No module system
+            factory(globalObject.WinJS);
         }
+        globalObject.msWriteProfilerMark && msWriteProfilerMark('WinJS.4.4 4.4.5.winjs.2019.9.16 ui.js,StopTM');
     }(function (WinJS) {
 
 
