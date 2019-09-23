@@ -19,7 +19,7 @@ if(navigator.sketch != null && navigator.sketch != undefined){
   '          which are the names of colors; the ID of each one is fed directly into the strokeStyle'+
   '          of the corresponding canvas.                -->'+
   '  <div id="bottomAppBar" data-win-control="WinJS.UI.AppBar"'+
-  '          data-win-options="{sticky: true,'+
+  '          data-win-options="{closedDisplayMode : "full", sticky: true,'+
   '                          commands:[        {id:\'InkColors\',label:\'Color\',icon:\'fontcolor\',section:\'global\',type:\'flyout\',flyout:\'InkColorFlyout\',tooltip:\'Choose ink color\'},'+
   '                                    {id:\'InkWidth\', label:\'Width\',icon:\'edit\',     section:\'global\',type:\'flyout\',flyout:\'InkWidthFlyout\',tooltip:\'Choose ink width\'},'+
   '                                    {type:\'separator\',id:\'sep\'},'+

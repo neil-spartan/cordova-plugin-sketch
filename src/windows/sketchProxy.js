@@ -4,7 +4,7 @@
 
   appendCanvasHtmlJs();
 
-  var html = '<link rel="stylesheet" href="/www/cordova-plugin-sketch/css/ui-dark.css" /><link rel="stylesheet" href="/www/cordova-plugin-sketch/css/program.css" /><link rel="stylesheet" href="/www/cordova-plugin-sketch/css/cordova-plugin-sketch.css" />';
+  var html = '<link rel="stylesheet" href="/www/cordova-plugin-sketch/css/cordova-plugin-sketch.css" /><link rel="stylesheet" href="/www/cordova-plugin-sketch/css/ui-dark.css" /><link rel="stylesheet" href="/www/cordova-plugin-sketch/css/program.css" />';
 
   var popupHtml = '<div id="cordova-plugin-sketch-popup" class="cordova-plugin-sketch-nativePopUp cordova-plugin-sketch-layout-withOrientation"><div id="cordova-plugin-sketch-sketchDiv" class="cordova-plugin-sketch-nativePopUp__content"></div></div>';
 
