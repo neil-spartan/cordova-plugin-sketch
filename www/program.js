@@ -603,11 +603,11 @@ function handleSelectionBoxGestureChange(evt)
 function setView()
 {
     if (window.innerWidth <= 320) {
-        appbar.showOnlyCommands(["Clear", "Done", "Cancel"], true);
+        appbar.showOnlyCommands(["Clear", "Done", "Cancel"]);
     // } else if (window.innerWidth <= 768) {
     //     appbar.showOnlyCommands(["Save", "Done", "Clear", "Cancel"], true);
     } else {
-        appbar.showCommands(["InkColors", "InkWidth", "ModeErase", "Done", "Clear", "Cancel"], true);
+        appbar.showOnlyCommands(["InkColors", "InkWidth", "ModeErase", "Done", "Clear", "Cancel"]);
     }
 }
 
