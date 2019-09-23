@@ -1660,7 +1660,6 @@ function inkInitialize()
             }
 
             inkMode();
-            appbar.show();
             renderPaper();
         }
     ).done(
